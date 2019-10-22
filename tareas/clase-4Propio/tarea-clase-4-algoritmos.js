@@ -206,11 +206,24 @@ Desafío de programación #14: Imprimir los primeros 10 dígitos de Fibonacci si
 Fibonacci (lo buscan en google si no lo saben o no se acuerdan)
 El resultado debería ser: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
 
-*/
 
+arr = [0, 1]
 
+for (let i = 2; i < 11; i++) {          //i < (CANTIDAD DE NUMEROS DE FIBB)
+  if (arr[i] === 0) {
+    console.log(i)
+  }
 
-/*
+  if (arr[i] === 1) {
+    console.log(i)
+  }
+
+  arr.push(arr[i - 1] + arr[i - 2])
+
+}
+
+console.log(arr)
+
 
 
 ///////////////////////////
@@ -218,13 +231,18 @@ Desafío de programación #15: Crear una función que encuentre el número n de 
 // suma de los 2 primeros numeros dan el tercero
 
 
-function fibonacci() {
-  for (let i = 0; i < 10; i++) {
-
-    console.log()
+function fibonacci(n) { //RAMIFICA EL NUMERO DADO
+  if (n === 1) {        // Y LO SEPARA LLAMANDOSE A SI MISMA
+    return n            // HASTA DARSE VALORES 1 Y 0
   }
+  if (n === 0) {        //Y LUEGO SE SUMAN ENTRE SI
+    return n            //Y TE DA EL NUMERO ESPECIFICADO
+  }
+
+  return fibonacci(n - 1) + fibonacci(n - 2)  // https://miro.medium.com/max/1200/1*LNBBacuaBFOVZXUV6VgEEg.png
 }
 
+console.log(fibonacci(10)) //INGRESAS CUAL NUMERO NECESITAS
 
 
 ///////////////////////////
@@ -240,6 +258,21 @@ Ejemplo:
   ... y así
 
 
+
+
+
+function numeroPrimos(n) {
+
+  if (n % n === 0 && n === n % 1) {
+    if (n % )
+  }
+
+}
+
+
+
+
+//////////////////////////
 Desafío de programación #17: Calcular la suma de los dígitos positivos de un número entero positivo
 Ejemplo:
   123 = 1 + 2 + 3 = 6
