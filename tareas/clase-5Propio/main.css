@@ -126,10 +126,22 @@ footer a:hover {
 }
 
 #resultado {
-    left: 5%;
     font-size: 24px;
     background-color: grey;
     color: black;
-    position: absolute;
-    top: 30%;
+    position: inherit;
 }
+
+.tabla-de-datos-usuario {
+    width: 200%;
+    font-size: 16px;
+    border: 6px solid #301414;
+    background-color: #ed1d1d;
+    text-align: center;
+    padding: 5px;
+}
+
+.resultado {
+    
+}
+

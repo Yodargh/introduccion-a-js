@@ -20,16 +20,22 @@ const $BOTON_INGRESAR = document.querySelector('#ingresar')
 
 
 $BOTON_INGRESAR.onclick = function () {
-    const $NOMBRE_USUARIO = document.querySelector('#usuario-nombre').value;
-    const $NOMBRE2_USUARIO = document.querySelector('#usuario-nombre2').value;
-    const $APELLIDO_USUARIO = document.querySelector('#usuario-apellido').value;
-    const $EDAD_USUARIO = document.querySelector('#usuario-edad').value;
+  const $NOMBRE_USUARIO = document.querySelector('#usuario-nombre').value;
+  const $NOMBRE2_USUARIO = document.querySelector('#usuario-nombre2').value;
+  const $APELLIDO_USUARIO = document.querySelector('#usuario-apellido').value;
+  const $EDAD_USUARIO = document.querySelector('#usuario-edad').value;
 
-    const DATOS_USUARIO = [$NOMBRE_USUARIO, $NOMBRE2_USUARIO, $APELLIDO_USUARIO, $EDAD_USUARIO]
+  const DATOS_USUARIO = [$NOMBRE_USUARIO, $NOMBRE2_USUARIO, $APELLIDO_USUARIO, $EDAD_USUARIO]
 
-    document.querySelector('#resultado').textContent = DATOS_USUARIO
-    document.querySelector('h1').textContent = `Bienvenido ${$NOMBRE_USUARIO}!`
+  document.querySelector('#datos-usuario-1').textContent = $NOMBRE_USUARIO
+  document.querySelector('#datos-usuario-2').textContent = $NOMBRE2_USUARIO
+  document.querySelector('#datos-apellido').textContent = $APELLIDO_USUARIO
+  document.querySelector('#datos-edad').textContent = $EDAD_USUARIO
 
-    return false;
+
+  document.querySelector('h1').textContent = `Bienvenido ${$NOMBRE_USUARIO}!`
+
+  return false;
 }
+
 

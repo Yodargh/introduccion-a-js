@@ -16,22 +16,39 @@
 
     <form id='formulario' onsubmit="return false;">
 
-        Ingresa tu nombre: <input type="text" placeholder="ej. Pablo" id='usuario-nombre'>
+        Ingresa tu nombre: <br>
+        <input type="text" placeholder="ej. Pablo" id='usuario-nombre'>
 
-        Ingresa tu segundo nombre: <input type="text" placeholder="ej. jorge" id='usuario-nombre2'>
+        Ingresa tu segundo nombre: <br>
+        <input type="text" placeholder="ej. jorge" id='usuario-nombre2'>
 
-        Ingresa tu apellido: <input type="text" placeholder="ej. Perez" id='usuario-apellido'>
+        Ingresa tu apellido: <br>
+        <input type="text" placeholder="ej. Perez" id='usuario-apellido'>
 
-        ingresa tu edad: <input type="number" placeholder="ej. 32" id='usuario-edad'>
-
+        ingresa tu edad: <br>
+        <input type="number" placeholder="ej. 32" id='usuario-edad'>
+        <br><br>
         <input type="submit" id='ingresar' value="ingresar">
 
     </form>
 
     <div>
-        <p id='resultado'>
-            
-        </p>
+        <table style="width:100%" class=tabla-de-datos-usuario>
+            <tr>
+                <th>Nombre</th>
+                <th>Segundo Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+
+            <tr>
+                <td class='datos-linea-1' id='datos-usuario-1'></td>
+                <td class='datos-linea-1' id='datos-usuario-2'></td>
+                <td class='datos-linea-1' id='datos-apellido'></td>
+                <td class='datos-linea-1' id='datos-edad'></td>
+            </tr>
+
+        </table>
 
     </div>
 
