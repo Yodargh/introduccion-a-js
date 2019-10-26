@@ -16,9 +16,15 @@ $BOTON_INGRESAR.onclick = function () {
     const $SEGUNDOS = document.querySelector('#segundo-ingresado').value;
 
     const tiempoTotal = ($HORAS * 60 * 60) + ($MINUTOS * 60) + $SEGUNDOS
-    document.querySelector('#resultado').textContent = tiempoTotal
+    document.querySelector('#resultado2').textContent = tiempoTotal
 
     return false
 }
+
+document.createElement()
+
+
+
+
 
 // falta el <strong> y poner mas opciones de mas de un video
