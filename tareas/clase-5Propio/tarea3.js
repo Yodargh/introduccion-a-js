@@ -6,7 +6,7 @@
 // cada dato.
 // al apretar el botón "Calcular tiempo total", debe mostrar en un
 // <strong> pre-creado el tiempo total de los videos.
-
+/*
 const $BOTON_INGRESAR = document.querySelector('#boton-ingresar');
 
 
@@ -20,11 +20,45 @@ $BOTON_INGRESAR.onclick = function () {
 
     return false
 }
+*/
 
-document.createElement()
+const $BOTON_INGRESAR = document.querySelector('#boton-ingresar');
+const $NODO_FORMULARIO = document.querySelector('form');
+
+
+$BOTON_INGRESAR.onclick = function () {
+    const $CANTIDAD_VIDEO_INGRESADO = document.querySelector('#cantidad-videos').value
+    for (let i = 0; i < $CANTIDAD_VIDEO_INGRESADO; i++) {
+        const $CREAR_NUEVO_INPUT = document.createElement('input');
+        const $CREAR_NUEVO_SEPARADOR = document.createElement('br');
+        $CREAR_NUEVO_INPUT.id = `nuevo-formulario-${i}`
+        $NODO_FORMULARIO.appendChild($CREAR_NUEVO_INPUT);
+        $NODO_FORMULARIO.appendChild($CREAR_NUEVO_SEPARADOR);
+        
+    }
+    return false;
+
+}
+
+
 
 
 
 
 
 // falta el <strong> y poner mas opciones de mas de un video
+
+/*
+    Ingresa horas
+        <input type="number" id='hora-ingresado'>
+        Ingresa Minutos
+        <input type="number" id='minuto-ingresado'>
+        Ingresa segundos
+        <input type="number" id='segundo-ingresado'>
+        <input type="submit" value='Ingresar' id='boton-ingresar'>
+        <br>
+
+        <br>
+
+
+*/
